@@ -40,21 +40,45 @@
   </script>
 </head>
 <body>
-  <h1>Contact Page</h1>
   <div class="page-content-holder">
     <div class="content-section">
-      <form id="contact-form">
-        <input type="hidden" name="contact_number" />
-        <input type="text" name="name" placeholder="Your Name" />
+      <div class="empty-space"></div>
+      <div class="contact-form-holder">
+        <form id="contact-form">
+          <input type="hidden" name="contact_number" />
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+          />
 
-        <input type="email" name="email" placeholder="Email" />
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
 
-        <input type="subject" name="subject" placeholder="Subject" />
+          <input
+            class="form-input"
+            type="subject"
+            name="subject"
+            placeholder="Subject"
+          />
 
-        <textarea name="message" placeholder="Message...."></textarea>
-        <input type="submit" value="Send" />
-      </form>
+          <textarea
+            class="form-input"
+            name="message"
+            placeholder="Message...."
+          ></textarea>
+          <input class="send-button" type="submit" value="Send" />
+        </form>
+      </div>
+      <div class="empty-space"></div>
     </div>
-    <div class="content=section"></div>
+    <div class="content-section">
+      <h1>Ben Adams</h1>
+    </div>
   </div>
 </body>

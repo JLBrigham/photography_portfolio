@@ -1,6 +1,7 @@
 body,
 h1 {
   font-family: "Raleway", Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -13,9 +14,26 @@ h1 {
 
 .page-content-holder {
   display: flex;
+  flex-direction: row;
 }
 
+@media (max-width: 800px) {
+  .page-content-holder {
+    flex-direction: column-reverse;
+  }
+}
 .content-section {
   color: red;
   flex-basis: 50%;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 2px solid red;
+  display: flex;
+}
+
+.contact-form-holder {
+  display: flex;
+  flex-direction: column;
 }
