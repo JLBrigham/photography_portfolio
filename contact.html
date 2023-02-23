@@ -2,6 +2,9 @@
 
 <head>
   <title>Contact Form</title>
+
+  <!--connection to emailjs-->
+
   <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -9,7 +12,7 @@
   <script type="text/javascript">
     (function () {
       // https://dashboard.emailjs.com/admin/account
-      emailjs.init("882ZwmK-4ik0xUvPX");
+      emailjs.init("a3lBeJ0YVoEuWl5f-");
     })();
   </script>
   <script type="text/javascript">
@@ -18,10 +21,13 @@
         .getElementById("contact-form")
         .addEventListener("submit", function (event) {
           event.preventDefault();
+
+          const serviceID = "service_sxpuwih";
+
           // generate a five digit number for the contact_number variable
           this.contact_number.value = (Math.random() * 100000) | 0;
           // these IDs from the previous steps
-          emailjs.sendForm("contact_service", "contact_form", this).then(
+          emailjs.sendForm(serviceID, "contact_form", this).then(
             function () {
               console.log("SUCCESS!");
             },
