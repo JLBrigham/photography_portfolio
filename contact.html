@@ -1,5 +1,12 @@
 <head>
   <title>Contact Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="styles.css" />
 
@@ -42,40 +49,36 @@
 <body>
   <div class="page-content-holder">
     <div class="content-section">
-      <div class="empty-space"></div>
-      <div class="contact-form-holder">
-        <form id="contact-form">
-          <input type="hidden" name="contact_number" />
-          <input
-            class="form-input"
-            type="text"
-            name="name"
-            placeholder="Your Name"
-          />
+      <form class="contact-form" id="contact-form">
+        <input type="hidden" name="contact_number" />
+        <input
+          class="form-input short-input"
+          type="text"
+          name="name"
+          placeholder="Your Name"
+        />
 
-          <input
-            class="form-input"
-            type="email"
-            name="email"
-            placeholder="Email"
-          />
+        <input
+          class="form-input short-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
 
-          <input
-            class="form-input"
-            type="subject"
-            name="subject"
-            placeholder="Subject"
-          />
+        <input
+          class="form-input"
+          type="subject"
+          name="subject"
+          placeholder="Subject"
+        />
 
-          <textarea
-            class="form-input"
-            name="message"
-            placeholder="Message...."
-          ></textarea>
-          <input class="send-button" type="submit" value="Send" />
-        </form>
-      </div>
-      <div class="empty-space"></div>
+        <textarea
+          class="form-input"
+          name="message"
+          placeholder="Message...."
+        ></textarea>
+        <input class="send-button" type="submit" value="Send Message" />
+      </form>
     </div>
     <div class="content-section">
       <h1>Ben Adams</h1>
