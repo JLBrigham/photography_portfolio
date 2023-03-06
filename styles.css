@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   background-color: #eff1ed;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1 {
@@ -42,7 +42,7 @@ h1 {
   margin: 5%;
   outline: none;
   font-size: 1.5vw;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .short-input {
@@ -56,7 +56,29 @@ h1 {
 }
 
 @media (max-width: 800px) {
-    .contact-form {
-      flex-direction: column;
-      min-height: 50vh;
-    }
+  .contact-form {
+    flex-direction: column;
+    min-height: 50vh;
+  }
+}
+
+.form-message {
+  resize: none;
+}
+
+.send-button {
+  background-color: #28536b;
+  color: #eff1ed;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5vw;
+  padding: 2%;
+  opacity: 0.8;
+  font-family: "Inter", sans-serif;
+  margin-left: 5%;
+}
+
+.send-button:hover {
+  opacity: 1;
+}
