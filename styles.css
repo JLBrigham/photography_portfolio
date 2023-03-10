@@ -1,16 +1,12 @@
 body {
   box-sizing: border-box;
   min-height: 100vh;
-  background-color: #eff1ed;
+  background-color: #fbfbff;
   font-family: "Inter", sans-serif;
 }
 
 h1 {
   letter-spacing: 6px;
-}
-
-.w3-row-padding img {
-  margin-bottom: 12px;
 }
 
 .page-content-holder {
@@ -37,12 +33,13 @@ h1 {
   border-bottom: 2px solid #28536b;
   display: flex;
   width: 100%;
-  background-color: #eff1ed;
+  background-color: #fbfbff;
   padding: 5%;
   margin: 5%;
   outline: none;
   font-size: 1.5vw;
   font-family: "Inter", sans-serif;
+  color: #28536b;
 }
 
 .short-input {
@@ -68,7 +65,7 @@ h1 {
 
 .send-button {
   background-color: #28536b;
-  color: #eff1ed;
+  color: #fbfbff;
   border: none;
   text-align: center;
   text-decoration: none;
@@ -81,4 +78,33 @@ h1 {
 
 .send-button:hover {
   opacity: 1;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.name {
+  font-weight: 600;
+  margin-top: 0%;
+  color: #28536b;
+}
+
+.title {
+  color: #28536b;
+  font-weight: 100;
+}
+
+.contact-link {
+  text-decoration: none;
+  outline: #28536b;
 }
